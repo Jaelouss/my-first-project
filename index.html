@@ -1,11 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Why u learn to code?</title>
   </head>
   <body>
-    <h1>This is an example project</h1>
+    <h1 id="title">Code? Why?</h1>
+    <hr />
+
+    <p id="description">So u start study. Tell us why.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <legend>Registration data</legend>
+        <label
+          id="name-label"
+          for="name"
+          >Whats your name:
+          <input
+            placeholder="Name"
+            required
+            id="name"
+            type="text"
+          />
+        </label>
+        <label
+          id="email-label"
+          for="email"
+          >Your email pls:
+          <input
+            placeholder="Email"
+            required
+            id="email"
+            type="email"
+          />
+        </label>
+        <label
+          id="number-label"
+          for="number"
+          >How old you: <input placeholder="Age" required id="number"
+          type="number" min="13" max="100"
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Study</legend>
+        <label
+          for="dropdown"
+          >How long you study atm
+          <select id="dropdown">
+            <option value="1">I take the first steps</option>
+            <option value="2">less than one year</option>
+            <option value="3">2 years of study</option>
+            <option value="4">All life xD</option>
+          </select>
+        </label>
+<div class="radio-group">
+        <p>Where do you study</p>
+          <label  for="study1">
+            <input type="radio"
+            id="study1"
+            name="studychk"
+            checked
+          />At home</label>
+          <label  for="study2"><input
+            type="radio"
+            id="study2"
+            name="studychk"
+          />Bootcapm</label>
+          <label  for="study3"><input
+            type="radio"
+            id="study3"
+            name="studychk"
+          />Univercity</label>
+          <label  for="study4"><input
+            type="radio"
+            id="study4"
+            name="studychk"
+          />At work</label>
+        </div>
+      </fieldset>
+      
+    <fieldset>
+        <legend>Why did you choose this direction?</legend>
+                <div class="checkbox-group">
+
+          <label  for="direction1"><input
+            type="checkbox"
+            id="direction1"
+            name="direction"
+            value="1"
+          />Money</label>
+          <label  for="direction2"><input
+            type="checkbox"
+            id="direction2"
+            name="direction"
+            value="2"
+          />Knowledge</label>
+          <label  for="direction3"><input
+            type="checkbox"
+            id="direction3"
+            name="direction"
+            value="3"
+          />New discoveries</label>
+          <label  for="direction4"><input
+            type="checkbox"
+            id="direction4"
+            name="direction"
+            value="4"
+          />Why not?</label>
+          <label  for="direction5"><input
+            type="checkbox"
+            id="direction5"
+            name="direction"
+            value="5"
+          />Change life</label>
+          <label  for="direction6"><input
+            type="checkbox"
+            id="direction6"
+            name="direction"
+            value="6"
+          />I love programming</label>
+          </div>
+      </fieldset>
+
+      <fieldset>
+       <label for="bio">Tell us about yourself</label>
+        <textarea
+        id="bio"
+        rows="3" cols="30"
+        placeholder="I love code..."></textarea>
+      </fieldset>
+      
+      <div class="submitbtn">
+      <input
+        type="submit"
+        id="submit"
+        value="Complete the survey"
+      />
+    </form>
   </body>
 </html>
